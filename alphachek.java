@@ -10,7 +10,7 @@ public class alphachek
         if(n=='A'||n=='a'||n=='E'||n=='e'||n=='I'||n=='i'||n=='O'||n=='o'||n=='U'||n=='u')
             System.out.println("Vowel");
         else if((65<n&&n<=90)||(97<n&&n<=122))
-            System.out.format("%d",(int)n);
+            System.out.println("Consonant");
         else
             System.out.println("not an alphabet");
         
