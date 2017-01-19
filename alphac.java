@@ -8,7 +8,7 @@ public class alphac
         char n;
         n=sn.next().charAt(0);
         if((65<=n&&n<=90)||(97<=n&&n<=122))
-            System.out.format("%d",(int)n);
+            System.out.format("%c is an alphabet",n);
         else
             System.out.println("not an alphabet");
         
