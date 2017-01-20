@@ -1,3 +1,4 @@
+
 import java.lang.*;
 import java.util.Scanner;
 
@@ -7,6 +8,8 @@ public class digitno
         Scanner sn=new Scanner(System.in);
         int n,count=0;
         n=sn.nextInt();
+        if(n<0)
+            n=n*-1;
         while(n>0)
         {
         count++;
