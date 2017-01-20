@@ -2,27 +2,26 @@
 import java.lang.*;
 import java.util.Scanner;
 
-public class powerfind
+public class palindrome
 {
-    public static double basepower(float base,float power)
-    {
-       if(power>0)        
-            return base*basepower(base,--power);
-        else
-           return 1;
-        
-    }
-    
+       
     public static void main(String[] args) {
         Scanner sn=new Scanner(System.in);
-        float base,power;
-        double val;
+        int num,temp,sum=0,no=0,rem;
         System.out.println("Enter number:");
-        base=sn.nextFloat();
-        System.out.println("Enter power:");
-        power=sn.nextFloat();
-        val=basepower(base,power);
-        System.out.format("%.3f power %.3f is : %.3f",base,power,val);
+        num=sn.nextInt();
+        temp=num;
+        while(temp>0)
+        {
+            rem=temp%10;
+            no=no*10+rem;
+            temp=temp/10;
+        }
+        if(num==no)
+            System.out.println("palindrome");
+        else
+            System.out.println("not palindrome");
+        
 }
            
 }
