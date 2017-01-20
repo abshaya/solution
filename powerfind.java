@@ -18,9 +18,9 @@ public class powerfind
         float base,power;
         double val;
         System.out.println("Enter number:");
-        base=sn.nextInt();
+        base=sn.nextFloat();
         System.out.println("Enter power:");
-        power=sn.nextInt();
+        power=sn.nextFloat();
         val=basepower(base,power);
         System.out.format("%.3f power %.3f is : %.3f",base,power,val);
 }
