@@ -6,10 +6,12 @@ public class digitno
 {
     public static void main(String[] args) {
         Scanner sn=new Scanner(System.in);
-        int n,count=0;
+        int n,temp,count=0;
         n=sn.nextInt();
         if(n<0)
             n=n*-1;
+        if(n==0)
+            System.out.println("Zero is entered");
         while(n>0)
         {
         count++;
