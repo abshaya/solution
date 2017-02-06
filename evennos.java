@@ -12,7 +12,7 @@ public class evennos
 		System.out.printf("The even numbers between %d and %d are:\n",int1,int2);
 		for(int i=int1+1;i<int2;i++)
 		{
-			if(i%2!=0)
+			if(i%2==0)
                         {
                                System.out.println(i+" ");
                         }
